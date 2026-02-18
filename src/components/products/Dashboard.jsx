@@ -5,7 +5,7 @@ import axios from "axios";
 
 export const Dashboard = () => {
 
-    const [ , setProductList] = useState([]);
+    const [productList, setProductList] = useState([]);
 
     async function getProducts() {
         await axios.get("https://dummyjson.com/products").then((res) => {
